@@ -16,13 +16,19 @@ header {
 
 }
 
-header .inner {
+ .inner {
     margin: 0 auto;
     max-width: 1280px;
+    position: relative;
+}
+
+header .inner {
+    height: 100%; 
 }
 
 nav {
     display: none;
+    background-color: rgba(255,255,255,.4);
 }
 
 h1 {
@@ -48,5 +54,64 @@ h1 {
 
 .intro {
     text-transform: uppercase;
-    padding: 10rem 1rem 1rem 1rem;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    position: absolute; 
 }
+
+.featured-work {
+    padding: 3rem 1rem;
+
+}
+
+.featured-work h2 {
+    text-transform: uppercase;
+    font-size: 16px; 
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.featured-work figure {
+    margin-bottom: 2rem;
+}
+
+.featured-work figcaption {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #000;
+    font-size: 14px
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 680px) {
+    .work-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width 800px) {
+    .menu-button {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+ 
