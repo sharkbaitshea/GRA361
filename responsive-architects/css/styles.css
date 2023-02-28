@@ -9,6 +9,7 @@ p {
     font-size: 18px;
 }
 
+
 header {
     background-image: url('../img/header.jpg');
     background-size: cover;
@@ -29,6 +30,7 @@ header .inner {
 nav {
     display: none;
     background-color: rgba(255,255,255,.4);
+    width: 100%;
 }
 
 h1 {
@@ -50,6 +52,7 @@ h1 {
 .menu-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .intro {
@@ -93,11 +96,32 @@ nav a {
     text-decoration: none;
 }
 
+.about {
+    background: #fafafa
+    padding: 1rem;
+}
+
+.about p {
+    border-left: 2px solid #f2f2f2;
+    margin-left: 2px;
+}
+
+footer {
+    padding: 1rem;
+}
+
+
+
 @media screen and (min-width: 680px) {
     .work-grid {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .about .inner {
+        display:grid;
+        grid-template-columns: 1fr 3fr;
     }
 }
 
@@ -106,7 +130,8 @@ nav a {
         display: none;
     }
     nav {
-        display: block;
+        display: block !important;
+        width: auto;
     }
 
     nav ul {
