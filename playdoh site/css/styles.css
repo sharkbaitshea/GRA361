@@ -1,32 +1,111 @@
 h1, h2 {
-    font-family: 'Space Mono', monospace;
-}
-
-p, ul {
-    font-family: "objektiv-mk3", sans-serif;
-    font-weight: 400;
+    font-family: cooper-black-std, serif;
     font-style: normal;
+    font-weight: 400;
+    color: #464545;
 }
 
 h1 {
-    font-size: 35;
-    color: #FC48B9;
+    font-size: 30pt;
+    margin-bottom: 27px;
 }
+
+ h2 {
+    font-size: 25pt;
+    padding-left:52px;
+    margin-bottom: 18px;
+    margin-top: 74px;
+    border-bottom: 13px solid #FEE638;
+    line-height: 0.2;
+
+}
+/*span {
+    background: linear-gradient(#FEE638, #FEE638) 0px 100% / 100% 13px no-repeat;
+  } */
+
 
 p {
-font-size: 14;
+    font-family: attribute-mono, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16pt;
+    margin-left:52px;
+    margin-right: 24px;
 }
 
-h2 {
-   font-size: 20;
+p.bold {
+    font-family: "attribute-mono", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-ul {
-    text-decoration: underline;
-    font-size: 20;
-    color: #434343;
+button {
+    background-color: #1DB0E7;
+    border: 8px double #ffff;
+    border-radius: 18px;
+    font-family: attribute-mono, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20pt;
+    padding: 0 27px 0;
 }
 
 
+li {
+ padding: 8px ;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 40px;
+    color:#464545;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 18px;
+    margin-right: 24px;
+    margin-left: 12px;
+    height: 98px;
+}
 
 
+.hero {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 34px;
+    margin-right: 33px;
+    margin-top: 52px; 
+    gap: 34px;
+}
+
+.hero img {
+    margin-top: 15px;
+}
+
+.shop {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.shop img {
+    margin-bottom: 21px;
+}
+
+footer {
+    background-color: #FEE638;
+    padding: 18px 0px 18px;
+    margin: 83px 0px 40px;
+}
+
+footer p {
+    font-size: 14pt;
+}
