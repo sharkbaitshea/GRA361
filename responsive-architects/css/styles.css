@@ -125,7 +125,7 @@ footer {
     }
 }
 
-@media screen and (min-width 800px) {
+@media screen and (min-width: 800px) {
     .menu-button {
         display: none;
     }
