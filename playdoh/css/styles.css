@@ -23,8 +23,27 @@ h1 {
     padding-left:52px;
     margin-bottom: 18px;
     margin-top: 74px;
-
 }
+
+.fancy {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+  }
+
+.fancy::before {
+    background: yellow;
+    bottom: 0;
+    content: " ";
+    height: 12px;
+    position: absolute;
+    right: 0;
+    width: 200%;
+    z-index: -1;
+  }
+
 /*span {
     background: linear-gradient(#FEE638, #FEE638) 0px 100% / 100% 13px no-repeat;
   } */
@@ -119,6 +138,7 @@ footer p {
 
 
 @media screen and (min-width: 900px) {
+
     
     .hero {
         display:grid;
@@ -150,15 +170,16 @@ footer p {
     }
 
     h1 {
-        font-size: 60pt;
+        font-size: 40pt;
     }
 
-    h2 {
+   h2 {
         font-size: 40pt;
-        margin-bottom: 0px;
+       /* margin-bottom: 0px;
         margin-top: 0px;
-        padding-left: 62px;
-    }
+        padding-left: 62px;*/
+    } 
+
 
     .historyContainer, .FAQsContainer, .shopContainer {
         display:grid;

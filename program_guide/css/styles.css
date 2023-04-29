@@ -45,7 +45,8 @@ img {
 }
 
 .menu-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -88,3 +89,6 @@ li a:hover {
  display: grid;
  grid-template-columns: 1fr 1fr;
 }
+
+
+
