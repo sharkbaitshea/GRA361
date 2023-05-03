@@ -7,7 +7,7 @@ Body {
     font-size: 10pt;
     margin-left: 53px; 
     margin-right: 53px;
-    margin-top: 66px;
+    margin-top: 66px; 
 }
 
 h1 {
@@ -32,6 +32,7 @@ h3 {
 
 
 img {
+    max-width: 100%;
     margin-top: 23px;
     margin-bottom: 23px;
     border: 0.5px solid rgb(167, 164, 164);
@@ -85,10 +86,32 @@ li a:hover {
     font-size: 12pt;
 }
 
-.portfolioImages {
- display: grid;
- grid-template-columns: 1fr 1fr;
+
+.process {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
+.finalSites{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .process{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 16pt;
+        color: #24408e
+    }
 
 
+}
